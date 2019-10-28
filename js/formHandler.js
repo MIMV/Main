@@ -15,7 +15,7 @@ $(function()
 
 			$form.find("input").each(function(e) // Loop over form objects build data object
 			{		
-				formData[$(this).attr('id')] = $(this).val();	
+				formData[$(this).attr('name')] = $(this).val();
 			});
 	
 			$.ajax({
