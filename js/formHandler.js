@@ -25,11 +25,11 @@ $(function()
 		    	cache: false,
 		    	success: function() // Success
 		 		{  
-					$form.append("<div id='form-alert'><div class='alert alert-success'><button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;</button><strong>"+successMsg+"</strong></div></div>");		
+					$form.append("<div id='form-alert'><div class='alert alert-success'><button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;</button><strong>"+successMsg+"</strong>"+formData+"</div></div>");		
 		 	   	},
 			   	error: function() // Fail
 			   	{
-					$form.append("<div id='form-alert'><div class='alert alert-danger'><button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;</button><strong>"+failMsg+"</strong></div></div>");	
+					$form.append("<div id='form-alert'><div class='alert alert-danger'><button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;</button><strong>"+failMsg+"</strong>"+formData+"</div></div>");	
 			   	},
 				complete: function() // Clear
 				{
@@ -39,7 +39,8 @@ $(function()
          },
          filter: function() // Handle hidden form elements
 		 {
-			 return $(this).is(":visible");
+		       return true;
+			 //return $(this).is(":visible");
          },
 	 });
 });
