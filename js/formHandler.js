@@ -13,7 +13,7 @@ $(function()
 			var processorFile = "https://formsubmit.co/ajax/info@mimv.co";
 			var formData = {};
 
-			$form.find("input, textarea").each(function(e) // Loop over form objects build data object
+			$form.find("input").each(function(e) // Loop over form objects build data object
 			{		
 				formData[$(this).attr('id')] = $(this).val();	
 			});
@@ -29,7 +29,7 @@ $(function()
 		 	   	},
 			   	error: function() // Fail
 			   	{
-					$form.append("<div id='form-alert'><div class='alert alert-danger'><button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;</button><strong>"+failMsg+"</strong></div></div>");	
+					$form.append("<div id='form-alert'><div class='alert alert-danger'><button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;</button><strong>"+failMsg+"</strong>"+formData+"</div></div>");	
 			   	},
 				complete: function() // Clear
 				{
