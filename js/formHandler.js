@@ -13,6 +13,11 @@ $(function()
 			var processorFile = "https://formsubmit.co/ajax/info@mimv.co";
 			var formData = {};
 
+			$form.find("input, textarea").each(function(e) // Loop over form objects build data object
+			{		
+				formData[$(this).attr('name')] = $(this).val();
+			});
+			
 			$form.find("input").each(function(e) // Loop over form objects build data object
 			{		
 				formData[$(this).attr('name')] = $(this).val();
