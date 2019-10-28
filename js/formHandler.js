@@ -17,11 +17,6 @@ $(function()
 			{		
 				formData[$(this).attr('name')] = $(this).val();
 			});
-			
-			$form.find("input").each(function(e) // Loop over form objects build data object
-			{		
-				formData[$(this).attr('name')] = $(this).val();
-			});
 	
 			$.ajax({
 		        url: processorFile,
