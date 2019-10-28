@@ -411,15 +411,25 @@
 			<div class="col-sm-6">
 			
 				<form class="animated fadeInRight animDelay02" action="https://formspree.io/xwkerkkb" method="POST">
-				  <label>
-					Your email:
-					<input class="form-control" type="text" name="_replyto">
-				  </label>
-				  <label>
-					Your message:
-					<textarea class="form-control" name="message"></textarea>
-				  </label>
-
+					<div class="form-group">
+						<label>
+							Name
+						</label>
+						<input id="name" name="name" class="form-control" data-validation-required-message="name is required." />
+					</div>
+					
+					<div class="form-group">
+				  		<label>
+						Your email:
+						<input id="email" class="form-control" type="email" name="_replyto" data-validation-required-message="email is required.">
+				  		</label>
+				  	</div>
+				  	<div class="form-group">
+				  		<label>
+							Your message:
+							<textarea id="message" class="form-control" name="message" rows="3" cols="50" data-validation-required-message="message is required."></textarea>
+				  		</label>
+					</div>
 				  <!-- your other form fields go here -->
 
 				  <button class="bloc-button btn btn-lg btn-block btn-d btn-clean" type="submit">Send</button>
