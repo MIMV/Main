@@ -10,7 +10,7 @@ $(function()
 	 	{
 			event.preventDefault(); // prevent default submit behaviour
 			
-			var processorFile = "https://formsubmit.co/info@mimv.co";
+			var processorFile = "https://formsubmit.co/ajax/info@mimv.co";
 			var formData = {};
 
 			$form.find("input, textarea").each(function(e) // Loop over form objects build data object
