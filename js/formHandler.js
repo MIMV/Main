@@ -29,7 +29,7 @@ $(function()
 		 	   	},
 			   	error: function() // Fail
 			   	{
-					$form.append("<div id='form-alert'><div class='alert alert-danger'><button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;</button><strong>"+failMsg+"</strong>"+formData+"</div></div>");	
+					$form.append("<div id='form-alert'><div class='alert alert-danger'><button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;</button><strong>"+failMsg+"</strong></div></div>");	
 			   	},
 				complete: function() // Clear
 				{
