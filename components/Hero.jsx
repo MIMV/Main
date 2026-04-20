@@ -93,7 +93,7 @@ function Hero() {
               <div className="label">Apps shipped</div>
             </div>
             <div className="hero-stat reveal delay-2">
-              <div className="num">19<span className="unit">yrs</span></div>
+              <div className="num">{new Date().getFullYear() - 2007}<span className="unit">yrs</span></div>
               <div className="label">Since 2007</div>
             </div>
             <div className="hero-stat reveal delay-3">

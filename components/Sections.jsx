@@ -120,10 +120,10 @@ function Services() {
               <h3 className="font-display">{s.title}</h3>
               <p>{s.body}</p>
             </div>
-            <div className="service-arrow">
+            <a href="#contact" className="service-arrow">
               <span>Start a conversation</span>
               <span className="a">↗</span>
-            </div>
+            </a>
           </div>
         ))}
       </div>
@@ -191,7 +191,7 @@ function Contact() {
             </div>
             <div>
               <div className="lbl">Phone</div>
-              <div className="val">+20 155 8 285 285</div>
+              <a className="val" href="tel:+201558285285">+20 155 8 285 285</a>
             </div>
           </div>
 
@@ -204,7 +204,7 @@ function Contact() {
             </div>
             <div>
               <div className="lbl">Email</div>
-              <div className="val">info@mimv.co</div>
+              <a className="val" href="mailto:info@mimv.co">info@mimv.co</a>
             </div>
           </div>
 
@@ -299,7 +299,7 @@ function Footer() {
         <span className="mimv-giant">MIMV*</span>
       </h2>
       <div className="footer-grid">
-        <div>© 2007–2026 MIMV LLC. Crafted with care.</div>
+        <div>© 2007–{new Date().getFullYear()} MIMV LLC. Crafted with care.</div>
         <div style={{ display: 'flex', gap: 24 }}>
           <a href="https://apps.apple.com/us/developer/i4islam/id301048985" target="_blank" rel="noopener">App Store</a>
           <a href="#latest">Work</a>
