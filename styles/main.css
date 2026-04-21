@@ -873,7 +873,6 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 @media (max-width: 640px) {
   /* Hero — hide decorative clutter, fit content to viewport */
   .hero { padding: 100px 20px 60px; min-height: auto; }
-  .hero-orbit,
   .hero-blob-1,
   .hero-blob-2 { display: none; }
   .hero-chip-float {
