@@ -110,3 +110,20 @@
   .founder-tag-2 { left: 4%; }
   .founder-tag-3 { right: 4%; }
 }
+
+@media (max-width: 640px) {
+  .founder-grid { gap: 40px; }
+  .founder-image-wrap { height: 460px; }
+  .founder-orbit-ring { inset: -16px; }
+  .founder-orbit-ring.r2 { inset: -32px; }
+  .founder-tag { padding: 8px 12px; font-size: 11px; }
+  .founder-tag-1 { top: 4%; right: 2%; }
+  .founder-tag-2 { top: 48%; left: 2%; }
+  .founder-tag-3 { bottom: 4%; right: 2%; }
+  .founder-lead { font-size: clamp(24px, 7vw, 32px); margin-bottom: 24px; }
+  .founder-p { font-size: 15px; }
+  .founder-stats { padding: 20px 16px; gap: 12px; margin: 28px 0 24px; }
+  .founder-stat .y { font-size: 28px; }
+  .founder-stat .l { font-size: 10px; }
+  .founder-quote { font-size: 16px; padding-left: 14px; }
+}
