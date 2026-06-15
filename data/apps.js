@@ -77,14 +77,14 @@ window.MIMV_LATEST = [
   },
   {
     id: 6474693547,
-    name: "Trivia By AI",
-    tagline: "No topic off-limits.",
-    category: "Games · AI",
-    year: 2024,
-    accent: "#475569",
+    name: "Save Your Brain",
+    tagline: "Feed it, or it dies.",
+    category: "Education · AI",
+    year: 2023,
+    accent: "#EC4899",
     icon: "assets/icons/6474693547.jpg",
-    desc: "Trivia By AI is an AI-powered trivia game that generates fresh questions on unlimited custom topics — from pop culture to deep niche subjects — so you're never playing the same quiz twice. Players can test their knowledge solo, challenge friends via Game Center, and climb leaderboards, with no topic off-limits thanks to on-the-fly AI question generation.",
-    url: "https://apps.apple.com/us/app/trivia-by-ai/id6474693547"
+    desc: "Save Your Brain is an AI-powered brain-training game that turns idle scrolling into a daily mental workout. Pick a topic or type your own interest and an AI generates fresh trivia in real time across 12 languages and difficulty levels from \"Fun for Kids\" to \"Insane Questions for Geniuses.\" Answer quickly to earn brain cells and light up six cognitive regions — Memory, Logic, Language, Creativity, Knowledge, and Numbers — while a virtual brain character thrives on daily streaks or deteriorates when neglected. It includes a free 5-question daily challenge, Game Center leaderboards, and no ads or artificial currencies.",
+    url: "https://apps.apple.com/us/app/id6474693547"
   },
   {
     id: 6471902969,
