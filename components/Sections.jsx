@@ -293,10 +293,37 @@ function Contact() {
 }
 
 function Footer() {
+  const videoRef = React.useRef(null);
+
+  React.useEffect(() => {
+    const vid = videoRef.current;
+    if (!vid) return;
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          vid.play().catch(() => {});
+        } else {
+          vid.pause();
+        }
+      });
+    }, { threshold: 0.4 });
+    io.observe(vid);
+    return () => io.disconnect();
+  }, []);
+
   return (
     <footer className="footer">
       <h2 className="footer-wordmark">
-        <span className="mimv-giant">MIMV*</span>
+        <video
+          ref={videoRef}
+          className="footer-video"
+          src="assets/video/MIMVLOGO1.mp4"
+          muted
+          loop
+          playsInline
+          preload="metadata"
+          aria-label="MIMV"
+        />
       </h2>
       <div className="footer-grid">
         <div>© 2007–{new Date().getFullYear()} MIMV LLC. Crafted with care.</div>
