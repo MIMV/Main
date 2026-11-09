@@ -68,7 +68,7 @@ function Catalog({ onOpen }) {
 
   const filtered = useMemoLC(() => {
     if (filter === 'All') return all;
-    if (filter === 'New') return all.filter(a => a.year === 2025);
+    if (filter === 'New') return all.filter(a => a.isNew);
     if (filter === 'AI') return all.filter(a => (a.category || '').includes('AI'));
     if (filter === 'Islamic') return all.filter(a => (a.category || '').includes('Islamic') || /Quran|Qibla|Azkar|Salaty|Mohammad|بيان|التطبيقات|الأحاديث|الشيخ|iAzkar|AlKetab/.test(a.name));
     if (filter === 'Games') return all.filter(a => (a.category || '').includes('Games'));
